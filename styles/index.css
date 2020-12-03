@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.theme-light {
+  --text: theme(colors.gray.700);
+  --bg-color: theme(colors.gray.100);
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg-color);
+  font-family: 'Inter sans-serif';
+}
