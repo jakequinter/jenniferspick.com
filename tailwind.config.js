@@ -1,11 +1,15 @@
 module.exports = {
-  purge: ['./src/**/*.tsx'],
-  darkMode: false, // or 'media' or 'class'
+  future: {
+    // removeDeprecatedGapUtilities: true,
+    // purgeLayersByDefault: true,
+  },
+  purge: [],
   theme: {
-    extend: {}
+    fontFamily: {
+      display: ['Inter', 'sans-serif'],
+      body: ['Inter', 'sans-serif']
+    }
   },
-  variants: {
-    extend: {}
-  },
+  variants: {},
   plugins: []
 };
