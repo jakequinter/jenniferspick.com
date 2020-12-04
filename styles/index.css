@@ -3,12 +3,20 @@
 @tailwind utilities;
 
 .theme-light {
-  --text: theme(colors.gray.700);
-  --bg-color: theme(colors.gray.100);
+  --text: theme(colors.gray.800);
+  --bg-color: theme(colors.gray.50);
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
 }
 
 body {
+  height: 100%;
+  overflow: auto;
   color: var(--text);
   background-color: var(--bg-color);
-  font-family: 'Inter sans-serif';
+  font-family: 'Inter, Roboto, sans-serif';
+  font-size: 18px;
 }

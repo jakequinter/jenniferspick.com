@@ -1,6 +1,8 @@
 import React, { ReactNode } from 'react';
 
 import NavButton from '../components/NavButton';
+import Heading from './Heading';
+import Footer from './Footer';
 
 interface ShellProps {
   children: ReactNode;
@@ -9,7 +11,7 @@ interface ShellProps {
 const Shell: React.FC<ShellProps> = ({ children }) => {
   return (
     <>
-      <div className="bg-gray-50 py-2">
+      <div className="bg-white p-2">
         <div className="flex justify-between m-auto max-w-screen-md">
           <NavButton url="/" text="Home" />
           <NavButton url="/about" text="About" />
@@ -17,9 +19,13 @@ const Shell: React.FC<ShellProps> = ({ children }) => {
           <NavButton url="/contact" text="Contact" />
         </div>
       </div>
-      <div className="flex flex-col max-w-screen-sm mx-auto justify-content pt-16">
+      <div
+        className="flex flex-col max-w-screen-sm mx-auto justify-content py-16 px-2 h-full"
+        style={{ minHeight: 'Calc(100vh - 87px)' }}
+      >
         {children}
       </div>
+      <Footer />
     </>
   );
 };

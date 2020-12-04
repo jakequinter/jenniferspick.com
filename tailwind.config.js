@@ -6,8 +6,8 @@ module.exports = {
   purge: [],
   theme: {
     fontFamily: {
-      display: ['Inter', 'sans-serif'],
-      body: ['Inter', 'sans-serif']
+      display: ['Inter', 'Roboto', 'sans-serif'],
+      body: ['Inter', 'Roboto', 'sans-serif']
     }
   },
   variants: {},
