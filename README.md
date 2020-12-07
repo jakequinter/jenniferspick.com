@@ -6,7 +6,8 @@ This personal site was developed to familiarize myself with TypeScript. I've rec
 
 - `pages/api/items`: An API route for retrieving the travel destinations on the `/about` page.
 - `pages/about`: Retrieves information from `pages/api/items` to display recent travel destinations.
-- `pages/*`: All other pages are static.
+- `pages/travel`: This is an authenticated route which displays a form to push new travel items onto the API.
+- `pages/*`: All other pages are static pages.
 
 ### Running Locally
 
@@ -23,7 +24,7 @@ NEXT_PUBLIC_FIREBASE_API_KEY=
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=
 FIREBASE_PRIVATE_KEY=
-FIREBASE_CLIENT_EMAIL=`
+FIREBASE_CLIENT_EMAIL=
 ```
 
 ### Built With
