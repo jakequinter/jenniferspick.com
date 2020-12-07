@@ -15,6 +15,7 @@ This personal site was developed to familiarize myself with TypeScript. I've rec
 $ git clone https://github.com/jakequinter/jenniferspick.com.git
 $ cd jenniferspick.com
 $ yarn
+$ yarn dev
 ```
 
 Create a `.env.local` file similar to what is posted below:
