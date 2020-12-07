@@ -1,8 +1,9 @@
 import React from 'react';
+import useSWR from 'swr';
 
 import Shell from '../components/Shell';
 import Heading from '../components/Heading';
-import TravelCard from '../components/TravelCard';
+import TravelList from '../components/TravelList';
 
 const about = () => {
   return (
@@ -11,11 +12,6 @@ const about = () => {
         title="About Me"
         subtitle="Welcome to my little slice of the internet."
       />
-      {/* <div className="flex justify-between items-center pb-16"> */}
-      {/* <div className="flex flex-col text-center">
-          <h3 className="text-2xl">Hello 👋🏻</h3>
-          <h3 className="text-xl">I'm Jennifer Spick.</h3>
-        </div> */}
       <div>
         <img
           className="rounded mx-auto mb-16"
@@ -34,23 +30,25 @@ const about = () => {
         <a
           className="text-blue-500 hover:underline"
           href="https://www.motionworkspt.com/"
+          target="_blank"
         >
           MotionWorks Physical Therapy
         </a>
-        , where I get to help doctor's with their schedules and also maintain
-        patient care.
+        , where I get to manage medical billing and coding, create schedules for
+        the Doctor's of Physical Therapy and also serve as the first point of
+        contact for patients.
       </p>
       <p className="pb-2">
-        I am also the Lead Pharmacy Technician at{' '}
+        I have been the Lead Pharmacy Technician at{' '}
         <a
           className="text-blue-500 hover:underline"
           href="https://www.cvs.com/"
+          target="_blank"
         >
           CVS Pharmacy
-        </a>
-        , where I get to assist in the training and development of new hires.
-        This company holds a special place in my heart, as it is where I spent
-        the majority of my undergraduate degree working.
+        </a>{' '}
+        sincw 2018 , where I get to assist in the training and development of
+        new hires. I spent the majority of my undergraduate degree working here.
       </p>
       <p>
         Recently (last one I promise), I started as the Communications
@@ -58,6 +56,7 @@ const about = () => {
         <a
           className="text-blue-500 hover:underline"
           href="https://kinleykay.com/"
+          target="_blank"
         >
           Kinley Kay Beauty Studio
         </a>
@@ -76,16 +75,7 @@ const about = () => {
         </p>
       </div>
       <hr className="border-t-2 border-gray-200 my-16" />
-      <div>
-        <h5 className="text-2xl font-bold pb-2" style={{ color: '#333333' }}>
-          Travel
-        </h5>
-        <TravelCard
-          text="Spent Thanksgiving with my mom"
-          location="Knoxville, TN"
-          date="November 2020"
-        />
-      </div>
+      <TravelList />
     </Shell>
   );
 };

@@ -4,11 +4,12 @@ interface TravelCardProps {
   text: string;
   location: string;
   date: string;
+  imageUrl: string;
 }
 
-const TravelCard = ({ text, location, date }: TravelCardProps) => {
+const TravelCard = ({ text, location, date, imageUrl }: TravelCardProps) => {
   return (
-    <div>
+    <div className="pb-8">
       <p>{text}</p>
       <div className="flex justify-between py-2">
         <p className="text-sm">{location}</p>
@@ -18,8 +19,8 @@ const TravelCard = ({ text, location, date }: TravelCardProps) => {
         <img
           className="rounded mx-auto"
           style={{ maxHeight: '500px' }}
-          src="/tn_travel.jpg"
-          alt="test"
+          src={imageUrl}
+          alt={location}
         />
       </div>
     </div>

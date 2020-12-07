@@ -16,8 +16,8 @@ const NavButton = ({ url, text }: NavButtonProps) => {
       onClick={() => setIsActive(!isActive)}
       className={
         isActive
-          ? 'bg-indigo-50 text-indigo-500 font-bold py-2 px-4 rounded'
-          : 'hover:bg-indigo-50 text-indigo-500 font-bold py-2 px-4 rounded'
+          ? 'bg-green-100 text-green-600 font-bold py-2 px-4 rounded'
+          : 'hover:bg-green-100 text-green-600 font-bold py-2 px-4 rounded'
       }
       href={url}
     >

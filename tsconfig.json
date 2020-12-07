@@ -21,7 +21,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", "tailwind.config.js"
+    "**/*.tsx", "tailwind.config.js", "lib/auth.js", "utils/fetcher.js", "utils/fetcher.js"
   ],
   "exclude": [
     "node_modules"

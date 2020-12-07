@@ -4,6 +4,18 @@ import { BiChevronsRight } from 'react-icons/bi';
 import Shell from '../components/Shell';
 import Heading from '../components/Heading';
 
+interface CertItemProps {
+  text: string;
+  isRight?: boolean;
+}
+
+const CertItem = ({ text, isRight }: CertItemProps) => (
+  <div className="flex items-center">
+    <BiChevronsRight className="mr-8" />
+    <p>{text}</p>
+  </div>
+);
+
 const resume = () => {
   return (
     <Shell>
@@ -18,7 +30,7 @@ const resume = () => {
           with friends, businesses, colleagues or your workplace.
         </p>
         <a
-          className="bg-indigo-500 text-white text-center text-lg py-2 px-4 rounded hover:bg-indigo-600"
+          className="bg-green-600 text-white text-center text-lg py-2 px-4 rounded hover:bg-green-700"
           href="/resume.pdf"
           target="_blank"
         >
@@ -35,6 +47,7 @@ const resume = () => {
           <a
             className="text-blue-500 hover:underline"
             href="https://uwosh.edu/"
+            target="_blank"
           >
             University of Wisconsin - Oshkosh
           </a>{' '}
@@ -46,6 +59,7 @@ const resume = () => {
           <a
             className="text-blue-500 hover:underline"
             href="https://www.uwlax.edu/"
+            target="_blank"
           >
             University of Wisconsin - La Crosse
           </a>
@@ -55,22 +69,20 @@ const resume = () => {
       </div>
       <hr className="border-t-2 border-gray-200 my-16" />
       <div>
-        <h5 className="text-2xl font-bold pb-2" style={{ color: '#333333' }}>
+        <h5 className="text-2xl font-bold pb-4" style={{ color: '#333333' }}>
           Certificates and skills
         </h5>
-        <div className="flex flex-col justify-center w-4/5 mx-auto">
-          <ul className="flex justify-between">
-            <li>Certified pharmacy technician</li>
-            <li>BLS CPR certified</li>
-          </ul>
-          <ul className="flex justify-between">
-            <li>Microsoft Office 365</li>
-            <li>Adobe Creative Suite</li>
-          </ul>
-          <ul className="flex justify-between">
-            <li>Canva</li>
-            <li>Asana</li>
-          </ul>
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 sm: gap-0 md:gap-2 sm:justify-items-start md:justify-items-center">
+          <div>
+            <CertItem text="Certified pharmacy technician" />
+            <CertItem text="Microsoft Office 365" />
+            <CertItem text="Canva" />
+          </div>
+          <div>
+            <CertItem isRight text="BLS - CPR certified" />
+            <CertItem isRight text="Adobe Creative Suite" />
+            <CertItem isRight text="Asana" />
+          </div>
         </div>
       </div>
     </Shell>
