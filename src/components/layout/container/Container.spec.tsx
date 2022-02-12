@@ -1,5 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react';
 
 import Container from './Container';
 
@@ -8,6 +7,7 @@ describe('Home', () => {
     render(<Container />);
     const contact = screen.getAllByText(/contact/i)[0];
 
+    expect(screen.getByText(/portfolio/i)).toBeInTheDocument();
     expect(contact).toBeInTheDocument();
     expect(screen.getByText(/resume/i)).toBeInTheDocument();
   });
