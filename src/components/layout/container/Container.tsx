@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 type Props = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export default function Container({ children }: Props) {

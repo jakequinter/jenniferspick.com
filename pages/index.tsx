@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 
-import Container from '../src/components/Container';
+import Container from 'src/components/layout/container/Container';
 
 const Home: NextPage = () => {
   return (
