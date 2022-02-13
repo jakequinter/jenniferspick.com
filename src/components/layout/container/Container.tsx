@@ -10,7 +10,7 @@ export default function Container({ children }: Props) {
     <div>
       <nav className="border-neurtal-200 flex items-center justify-between border-b px-8 py-2.5">
         <Link href="/" passHref>
-          <a className="logo bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400 bg-clip-text pb-1 text-3xl text-transparent">
+          <a className="montserrat bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400 bg-clip-text pb-1 text-3xl text-transparent">
             Jennifer
           </a>
         </Link>
@@ -36,13 +36,13 @@ export default function Container({ children }: Props) {
         </div>
       </nav>
       <main
-        className="mx-auto mt-24 max-w-screen-lg"
+        className="mx-auto mt-24 max-w-screen-lg px-4 xl:px-0"
         style={{ minHeight: 'calc(100vh - 218px)' }}
       >
         {children}
       </main>
-      <footer className="border-neurtal-200 flex items-center justify-between border-t px-8 py-2.5">
-        <p className="logo bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400 bg-clip-text pb-1 text-3xl text-transparent">
+      <footer className="border-neurtal-200 mt-24 flex items-center justify-between border-t px-8 py-2.5">
+        <p className="montserrat bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400 bg-clip-text pb-1 text-3xl text-transparent">
           Jennifer
         </p>
         <div>
