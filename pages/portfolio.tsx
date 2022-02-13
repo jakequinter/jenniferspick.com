@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-import Container from 'src/components/layout/Container/Container';
+import Container from 'src/components/layout/Containe/Container';
 import ProfessionalDocuments from 'src/components/ProfessionalDocuments/ProfessionalDocuments';
 import ProgramOutcomesCards from 'src/components/ProgramOutcomesCards/ProgramOutcomesCards';
 
