@@ -54,23 +54,36 @@ export default function ProgramOutcomesCards() {
   return (
     <div className="grid grid-cols-1 items-center gap-4 lg:grid-cols-2">
       <div className="order-last grid grid-cols-1 gap-4 sm:grid-cols-2 lg:order-first">
-        {items.map((item) => (
+        {items.map((item, idx) => (
           <motion.div
             key={item.id}
-            layout
-            className={`${
-              isOpen === item.id
-                ? 'ring-2 ring-neutral-200'
-                : 'flex h-20 items-center justify-center'
-            } cursor-pointer rounded-xl border-2 border-neutral-200 hover:ring-2 hover:ring-neutral-200`}
-            onClick={() => handleCardClick(item.id)}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3, delay: idx * 0.3 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
           >
-            <div className="order-first p-4 lg:order-last">
-              <h2 className="text-center text-lg font-medium text-neutral-900">
-                {item.title}
-              </h2>
-              {isOpen === item.id && <p className="mt-2">{item.description}</p>}
-            </div>
+            <motion.div
+              layout
+              className={`${
+                isOpen === item.id
+                  ? 'ring-2 ring-neutral-200'
+                  : 'flex h-20 items-center justify-center'
+              } cursor-pointer rounded-xl border-2 border-neutral-200 hover:ring-2 hover:ring-neutral-200`}
+              onClick={() => handleCardClick(item.id)}
+            >
+              <div className="order-first p-4 lg:order-last">
+                <h2 className="text-center text-lg font-medium text-neutral-900">
+                  {item.title}
+                </h2>
+                {isOpen === item.id && (
+                  <p className="mt-2">{item.description}</p>
+                )}
+              </div>
+            </motion.div>
           </motion.div>
         ))}
       </div>
