@@ -38,7 +38,7 @@ const Home: NextPage = () => {
         <div className="ml-auto">
           <Image
             className="rounded-lg"
-            src="/images/me.jpg"
+            src="/images/jenHomepage.jpg"
             alt="Jennifer"
             height="400"
             width="300"

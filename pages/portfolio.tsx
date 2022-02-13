@@ -43,7 +43,7 @@ export default function Portfolio() {
         >
           <Image
             className="rounded-lg"
-            src="/images/me.jpg"
+            src="/images/jenPortfolio.jpg"
             alt="Jennifer"
             height="400"
             width="300"
