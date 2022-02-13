@@ -10,7 +10,7 @@ export default function Portfolio() {
     <Container>
       <div className="mb-48 text-center">
         <h1 className="montserrat text-4xl text-neutral-900">
-          Jennifer Spick, MS, BS
+          Jennifer Spick, M.S., B.S.
         </h1>
         <h2 className="text-xl">
           Master of Science, Healthcare Administration
