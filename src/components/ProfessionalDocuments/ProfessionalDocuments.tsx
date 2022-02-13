@@ -74,12 +74,18 @@ function RadixTooltip({ icon, label, href }: RadixToolTipProps) {
       <Tooltip.Root>
         <Link href={href} passHref>
           <a href={href} download>
-            <Tooltip.Trigger className="mx-1 rounded-lg border-2 border-gray-200 p-4">
+            <Tooltip.Trigger
+              className="mx-1 rounded-lg border-2 border-gray-200 p-4"
+              aria-label={label}
+            >
               {icon}
             </Tooltip.Trigger>
           </a>
         </Link>
-        <Tooltip.Content className="mt-2 rounded-full bg-neutral-700 px-2.5 py-0.5 text-white transition delay-300 duration-300 ease-in-out">
+        <Tooltip.Content
+          data-testid="tool"
+          className="mt-2 rounded-full bg-neutral-700 px-2.5 py-0.5 text-white transition delay-300 duration-300 ease-in-out"
+        >
           {label}
         </Tooltip.Content>
       </Tooltip.Root>

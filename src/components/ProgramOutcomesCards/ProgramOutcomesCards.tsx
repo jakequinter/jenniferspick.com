@@ -25,7 +25,7 @@ export default function ProgramOutcomesCards() {
     },
     {
       id: '4',
-      title: 'Effectivness',
+      title: 'Effectiveness',
       description:
         'Performance, yadayadaydads, regulatory, governmental, and ethical issues',
     },

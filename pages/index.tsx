@@ -5,20 +5,12 @@ import Image from 'next/image';
 import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion';
 
-import Container from 'src/components/layout/container/Container';
+import Container from 'src/components/layout/Container/Container';
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: { opacity: 0, scale: 0.8 },
-          visible: { opacity: 1, scale: 1, transition: { delay: 0.4 } },
-        }}
-        className="grid grid-cols-2 items-center gap-4"
-      >
+      <div className="grid grid-cols-2 items-center gap-4">
         <div>
           <p className="mb-4">
             Hi, I’m{' '}
@@ -53,7 +45,7 @@ const Home: NextPage = () => {
             width="300"
           />
         </div>
-      </motion.div>
+      </div>
     </Container>
   );
 };

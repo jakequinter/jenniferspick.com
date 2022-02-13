@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-import Container from 'src/components/layout/container/Container';
-import ProfessionalDocuments from 'src/components/ProfessionalDocuments';
-import ProgramOutcomesCards from 'src/components/ProgramOutcomesCards';
+import Container from 'src/components/layout/Container/Container';
+import ProfessionalDocuments from 'src/components/ProfessionalDocuments/ProfessionalDocuments';
+import ProgramOutcomesCards from 'src/components/ProgramOutcomesCards/ProgramOutcomesCards';
 
 export default function Portfolio() {
   return (
@@ -35,7 +35,12 @@ export default function Portfolio() {
             excited to leave a positive impact on healthcare.
           </p>
         </div>
-        <div className="mx-auto md:mx-0 md:ml-auto">
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+          animate={{ opacity: 1 }}
+          className="mx-auto md:mx-0 md:ml-auto"
+        >
           <Image
             className="rounded-lg"
             src="/images/me.jpg"
@@ -43,7 +48,7 @@ export default function Portfolio() {
             height="400"
             width="300"
           />
-        </div>
+        </motion.div>
       </div>
       <ProfessionalDocuments />
       <ProgramOutcomesCards />

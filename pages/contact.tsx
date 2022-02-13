@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import Container from 'src/components/layout/container/Container';
+import Container from 'src/components/layout/Container/Container';
 
 export default function Contact() {
   return (
