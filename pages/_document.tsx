@@ -30,18 +30,12 @@ export default class Document extends NextDocument {
           />
           <link
             rel="preload"
-            href="/fonts/silka/silka-semibold-webfont.ttf"
-            as="font"
-            crossOrigin=""
-          />
-          <link
-            rel="preload"
             href="/fonts/silka/silka-bold-webfont.ttf"
             as="font"
             crossOrigin=""
           />
         </Head>
-        <body className="bg-neutral-50 text-neutral-600 text-base">
+        <body className="bg-neutral-50 text-base text-neutral-600">
           <Main />
           <NextScript />
         </body>

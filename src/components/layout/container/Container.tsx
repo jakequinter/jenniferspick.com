@@ -25,8 +25,11 @@ export default function Container({ children }: Props) {
               Contact
             </a>
           </Link>
-          <Link href="/resume">
-            <a className="mr-2 inline-flex items-center rounded-md px-3 py-2.5 hover:bg-neutral-100 hover:text-neutral-900 focus:outline-none focus:ring-1 focus:ring-neutral-300 focus:ring-offset-1">
+          <Link href="/assets/resume.pdf" passHref>
+            <a
+              className="mr-2 inline-flex items-center rounded-md px-3 py-2.5 hover:bg-neutral-100 hover:text-neutral-900 focus:outline-none focus:ring-1 focus:ring-neutral-300 focus:ring-offset-1"
+              download="Jennifer Spick Resume"
+            >
               Resume
             </a>
           </Link>

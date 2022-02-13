@@ -1,25 +1,35 @@
-import type { NextPage } from "next";
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { motion } from 'framer-motion';
 
-import Container from "src/components/layout/container/Container";
+import Container from 'src/components/layout/container/Container';
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <div className="grid grid-cols-2 items-center gap-4">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0, scale: 0.8 },
+          visible: { opacity: 1, scale: 1, transition: { delay: 0.4 } },
+        }}
+        className="grid grid-cols-2 items-center gap-4"
+      >
         <div>
           <p className="mb-4">
-            Hi, I’m{" "}
+            Hi, I’m{' '}
             <span className="logo text-3xl text-neutral-900">Jennifer</span>!
             I’m an operating room coordinator at Massachusettes General Hospital
-            in Boston, MA. I am also a master’s student at the{" "}
-            <Link href="https://www.uwlax.edu/">
+            in Boston, MA. I am also a master’s student at the{' '}
+            <Link href="https://www.uwlax.edu/grad/health-care-administration/">
               <a className="text-blue-500">University of Wisconsin La Crosse</a>
-            </Link>{" "}
-            where I am finishing my final semester in the public health program.{" "}
+            </Link>{' '}
+            where I am finishing my final semester in the healthcare
+            administration program.{' '}
           </p>
           <p className="mb-8">
             Aside from my professional and educational career, I enjoy nature,
@@ -39,7 +49,7 @@ const Home: NextPage = () => {
             width="300"
           />
         </div>
-      </div>
+      </motion.div>
     </Container>
   );
 };
