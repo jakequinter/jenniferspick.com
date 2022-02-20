@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Container from 'src/components/layout/Container/Container';
 import ProfessionalDocuments from 'src/components/ProfessionalDocuments/ProfessionalDocuments';
 import ProgramOutcomesCards from 'src/components/ProgramOutcomesCards/ProgramOutcomesCards';
+import Curriculum from 'src/components/Curriculum/Curriculum';
 
 export default function Portfolio() {
   return (
@@ -50,6 +51,8 @@ export default function Portfolio() {
           />
         </motion.div>
       </div>
+
+      <Curriculum />
       <ProfessionalDocuments />
       <ProgramOutcomesCards />
     </Container>
