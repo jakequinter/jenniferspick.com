@@ -29,12 +29,15 @@ const Home: NextPage = () => {
             exercise, friends and family, and exploring my new home.
           </p>
           <Link href="/portfolio" passHref>
-            <a className="inline-flex items-center rounded-lg border border-neutral-200 bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400 bg-clip-text px-4 py-3 font-medium text-transparent hover:ring-2 hover:ring-neutral-200">
-              <span>View portfolio</span>
+            <a className="inline-flex items-center rounded-lg border border-neutral-200 px-4 py-3 hover:ring-2 hover:ring-neutral-200">
+              <span className="bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400  bg-clip-text font-medium text-transparent">
+                View portfolio
+              </span>
               <ArrowRightIcon className="ml-2 text-pink-400" />
             </a>
           </Link>
         </div>
+
         <div className="ml-auto">
           <Image
             className="rounded-lg"

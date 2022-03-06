@@ -16,11 +16,6 @@ export default function Container({ children }: Props) {
           </a>
         </Link>
         <div>
-          {/* <Link href="/portfolio" passHref>
-            <a className="mr-2 inline-flex items-center rounded-md px-3 py-2.5 hover:bg-neutral-100 hover:text-neutral-900 focus:outline-none focus:ring-1 focus:ring-neutral-300 focus:ring-offset-1">
-              Portfolio
-            </a>
-          </Link> */}
           <Select />
           <Link href="/contact" passHref>
             <a className="mr-2 inline-flex items-center rounded-md px-3 py-2.5 hover:bg-neutral-100 hover:text-neutral-900 focus:outline-none focus:ring-1 focus:ring-neutral-300 focus:ring-offset-1">
@@ -62,48 +57,48 @@ export default function Container({ children }: Props) {
 
 function Select() {
   return (
-    <div className="mr-2 inline-flex items-center rounded-md px-3 py-2.5 hover:bg-neutral-100 hover:text-neutral-900 focus:outline-none focus:ring-1 focus:ring-neutral-300 focus:ring-offset-1">
+    <div className="mr-2 inline-flex items-center rounded-md px-3 py-2.5 hover:bg-neutral-100 hover:text-neutral-900 focus:outline-none focus:ring-0 focus:ring-neutral-300 ">
       <Popover.Root>
         <Popover.Trigger className="flex items-center">
           <span className="mr-2">Portfolio</span> <ChevronDownIcon />
         </Popover.Trigger>
         <Popover.Anchor />
         <Popover.Content
-          className="mt-5 flex w-40 flex-col rounded-lg border border-neutral-200 bg-white shadow"
+          className="mt-5 flex w-40 flex-col rounded-lg border border-neutral-200 bg-white shadow outline-none focus:ring-0"
           align="end"
         >
           <Link href="/portfolio" passHref>
-            <a className="rounded-t-lg p-2 hover:bg-gray-50 hover:text-neutral-900">
+            <a className="rounded-t-lg p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
               Overview
             </a>
           </Link>
           <Link href="/portfolio/leadership" passHref>
-            <a className="rounded-t-lg p-2 hover:bg-gray-50 hover:text-neutral-900">
+            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
               Leadership
             </a>
           </Link>
           <Link href="/portfolio/performance" passHref>
-            <a className="p-2 hover:bg-gray-50 hover:text-neutral-900">
+            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
               Performance
             </a>
           </Link>
           <Link href="/portfolio/recruitment" passHref>
-            <a className="p-2 hover:bg-gray-50 hover:text-neutral-900">
+            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
               Recruitment
             </a>
           </Link>
           <Link href="/portfolio/effectiveness" passHref>
-            <a className="p-2 hover:bg-gray-50 hover:text-neutral-900">
+            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
               Effectiveness
             </a>
           </Link>
           <Link href="/portfolio/financial-strategies" passHref>
-            <a className="p-2 hover:bg-gray-50 hover:text-neutral-900">
+            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
               Financial strategies
             </a>
           </Link>
           <Link href="/portfolio/communication" passHref>
-            <a className="rounded-b-lg p-2 hover:bg-gray-50 hover:text-neutral-900">
+            <a className="rounded-b-lg p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
               Communication
             </a>
           </Link>

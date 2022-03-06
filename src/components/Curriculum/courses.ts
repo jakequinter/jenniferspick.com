@@ -4,7 +4,7 @@ export const courses = [
     name: 'U.S. Healthcare Systems',
     courseNumber: 'HCA 700',
     description:
-      'This course introduces the many public and private elements of the U.S. healthcare system. In it, you will explore the historical, social and cultural, financial and economic, and political and regulatory factors of healthcare delivery, plus learn how those factors interact to influence patient care and services and affect individual and population health outcomes.',
+      'This course helped me brush up on my knowledge of the U.S. Health System and how it works, including specialty areas of healthcare, payment structures and spending, Medicaid/Medicare and insurances, ACA, and the importance of leveraging value-based care.',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA700Syllabus.pdf',
   },
@@ -13,7 +13,7 @@ export const courses = [
     name: 'Population Health and Epidemiology',
     courseNumber: 'HCA 705',
     description:
-      'This course introduces the many public and private elements of the U.S. healthcare system. In it, you will explore the historical, social and cultural, financial and economic, and political and regulatory factors of healthcare delivery, plus learn how those factors interact to influence patient care and services and affect individual and population health outcomes.',
+      'This class helped me grasp a better understanding of rural healthcare and the many social determinants of health and health disparities. Being able to understand and identify social determinants and health disparities is what makes exceptional healthcare professionals. ',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA705Syllabus.pdf',
   },
@@ -22,7 +22,7 @@ export const courses = [
     name: 'Communications and Marketing in Healthcare',
     courseNumber: 'HCA 710',
     description:
-      'This course focuses on the use and analysis of communication strategies to inform and influence individual and community decisions that impact health. You will explore topics such as the social construction of health, social support, literacy, survivorship, social and community issues, risk management, marketing and public relations, health messaging and promotional campaigns, theory application, and identity across contexts.',
+      'Communication plays a key role in health literacy. This class taught me the importance of communications in healthcare, how we communicate, and the impact it has on the patient based on their culture, social status, etc. ',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA710Syllabus.pdf',
   },
@@ -31,7 +31,7 @@ export const courses = [
     name: 'Healthcare Technology, Data Analytics, and Information',
     courseNumber: 'HCA 715',
     description:
-      'This course covers tech- and data-related topics in healthcare including electronic health records, health IT privacy and security, health information exchanges, IT for revenue cycle management, healthcare data analytics, technologies for diagnosis and treatment, and big data applications in healthcare.',
+      'Our future is in the hands of technology and being able to learn and advance in this area is critical. This curriculum taught me a lot of useful information, specifically working with Excel. I found this course challenging due to the multiple steps and “shortcuts” if you will, that it takes to learn and memorize to develop graphs and information. These concepts are something I will definitely need further education and training on but I do think that this is something I can become more fluent in with more repetition.',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA715Syllabus.pdf',
   },
@@ -40,7 +40,7 @@ export const courses = [
     name: 'Healthcare Financial Management',
     courseNumber: 'HCA 720',
     description:
-      'This course is a study of the principles of healthcare finance. You will explore topics such as financial and management accounting, the financial reporting structure of healthcare organizations, financial statement analysis, cost and budgetary methods, sources of revenue and expenses, processes for billing, and capital investment decisions.',
+      'Finance has always been a challenging subject for me. I understand the importance of budgeting and finance, and this course allowed me to build a better understanding of the application to healthcare, but I still need to further develop this skill set. I’ve always enjoyed working with numbers so I think it would only be a matter of real-life practice and application to help me advance in financial management. ',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA720Syllabus.pdf',
   },
@@ -49,7 +49,7 @@ export const courses = [
     name: 'Human Capital Management',
     courseNumber: 'HCA 730',
     description:
-      'Examine the complexities in healthcare human resource management strategies. Gain the knowledge and tools to develop high-potential workforces using a people-centered approach to human capital management, organizational culture, communication, and talent development, ensuring a competitive advantage in creating sustainable, high-performance healthcare organizations in rural and urban settings.',
+      'This is one of the courses I found very applicable and relevant. I think it’s so important for organizations to reciprocate appreciation to their employees, who create profit for the organization. Leveraging human capital is a requirement to sustain a competitive advantage, retain talent, and satisfy your workers. Organizations cannot perform to their highest potential without employees who feel appreciated, understood, and valued by their employers. This course has helped me recognize how employers take the initiative to implement human capital measures, or their lack thereof.',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA720Syllabus.pdf',
   },
@@ -58,7 +58,7 @@ export const courses = [
     name: 'Healthcare Operations and Project Management',
     courseNumber: 'HCA 740',
     description:
-      'This course explores operations management techniques unique to healthcare processes. It addresses solutions for operational issues in healthcare facilities and supply chain, and highlights essential components of healthcare project management. The curriculum emphasizes operational and management tools and techniques for project and process execution in a healthcare environment.',
+      'One key takeaway from this course was the use and implementation of a project charter. I’ve grown familiar with the benefits of a project charter and its purpose in operations and project management. Managing the scope of a project, whether it’s for process improvement, coordinating care, managing inventory, addressing capacity, etc. can be complex and challenging. There are many processes to consider when analyzing healthcare operations which is why it takes strong project management skills to deliver successful results.',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA740Syllabus.pdf',
   },
@@ -67,7 +67,7 @@ export const courses = [
     name: 'Healthcare Quality and Performance Improvement',
     courseNumber: 'HCA 750',
     description:
-      'This course provides an overview of quality models and risk management in healthcare. You will explore theories, concepts, skills, tools, and environmental factors, with a focus on measurement and analysis techniques and the real-world application of quality approaches to implement and sustain performance improvements.',
+      'This course taught me about the importance of problem solving when it comes to quality and performance improvement. Prior to this course, I was aware of methods such as SWOT and Forcefield analyses, however I was not aware of the dozens of problem-solving tools that exist and their relevance to process improvement. I think what I have yet to learn, and experience is how/when to apply each problem-solving technique.',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA750Syllabus.pdf',
   },
@@ -76,7 +76,7 @@ export const courses = [
     name: 'Health Law and Policy',
     courseNumber: 'HCA 760',
     description:
-      'This course is a study of the political, legal, regulatory, and ethical environments within which healthcare administrators operate. You will examine the legal frameworks related to the healthcare system, with an ethical focus. The curriculum considers the impact of political structure on healthcare policy, with an emphasis on the role played by healthcare administrators in policy advocacy.',
+      'This course allowed me to brush up on some law basics, as well as furthered my understanding of law and policies and the influence it has on healthcare. Laws and policies help shape healthcare costs, patient rights, and many other controversial topics. ',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA760Syllabus.pdf',
   },
@@ -85,7 +85,7 @@ export const courses = [
     name: 'Organization Development and Strategic Leadership in Healthcare',
     courseNumber: 'HCA 770',
     description:
-      'This course is focused on organization development and leadership theories, including the self-discovery of leadership potential and change leadership strategies applied within healthcare organizations. As a blend of theory and application, the course is designed for you to work toward identifying and implementing broad-scale organizational change while employing strategic leadership practices.',
+      'This course gave me a better understanding of what it means to be a healthcare leader, who I am as a leader, and what I value. It’s helped set me up for success by preparing professional and personal development plans, which will aid in my growth and development as a transformative leader. ',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA770Syllabus.pdf',
   },
@@ -94,7 +94,7 @@ export const courses = [
     name: 'Current and Emerging Topics in Healthcare',
     courseNumber: 'HCA 780',
     description:
-      'This course investigates current and emerging trends influencing healthcare today, including policies and politics, ethics, emerging technologies, healthcare population and disease demographics, and reimbursement models. You will explore and understand the differences between rural, urban, and global settings.',
+      'Familiarizing oneself with current and emerging topics in healthcare is how we continue to make a difference. Being able to recognize and understand what’s evolving in healthcare and how we must act to implement change is a very important part of our role. This course specifically taught me more about cultural competence in healthcare and what it means to be a culturally competent healthcare leader. Our country is more diverse now than it’s ever been while continuing to become more diverse, and we cannot provide patients with the utmost quality of care if we are not culturally competent. ',
     syllabusUrl:
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA780Syllabus.pdf',
   },
