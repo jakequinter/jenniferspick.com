@@ -99,15 +99,6 @@ export const courses = [
       'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA780Syllabus.pdf',
   },
   {
-    id: '12',
-    name: 'Capstone Preperation',
-    courseNumber: 'HCA 789',
-    description:
-      'This course is designed to prepare you for the applied capstone course. You will assist with capstone site identification, coordination, and approval of placement; plus develop a substantive project to work on with your site mentor/supervisor.',
-    syllabusUrl:
-      'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA789Syllabus.pdf',
-  },
-  {
     id: '13',
     name: 'Capstone',
     courseNumber: 'HCA 790',
