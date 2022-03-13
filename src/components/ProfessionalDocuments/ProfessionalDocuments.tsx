@@ -25,7 +25,7 @@ const documents = [
     id: 3,
     icon: <ClipboardIcon />,
     label: 'Courses',
-    href: '/assets/resume.pdf',
+    href: 'https://uwex.wisconsin.edu/healthcare-administration/#curriculum',
   },
 ];
 

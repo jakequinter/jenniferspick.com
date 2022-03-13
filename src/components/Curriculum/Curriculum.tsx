@@ -22,7 +22,7 @@ export default function Curriculum() {
               {course.syllabusUrl ? (
                 <Link href={course.syllabusUrl} passHref>
                   <a className="inline-flex items-center">
-                    View syllabus <ArrowRightIcon className="ml-4" />
+                    View coursework <ArrowRightIcon className="ml-4" />
                   </a>
                 </Link>
               ) : null}

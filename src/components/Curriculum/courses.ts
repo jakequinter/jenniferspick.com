@@ -6,7 +6,7 @@ export const courses = [
     description:
       'This course helped me brush up on my knowledge of the U.S. Health System and how it works, including specialty areas of healthcare, payment structures and spending, Medicaid/Medicare and insurances, ACA, and the importance of leveraging value-based care.',
     syllabusUrl:
-      'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA700Syllabus.pdf',
+      '/portfolio/outcomes/#1',
   },
   {
     id: '2',
@@ -15,7 +15,7 @@ export const courses = [
     description:
       'This class helped me grasp a better understanding of rural healthcare and the many social determinants of health and health disparities. Being able to understand and identify social determinants and health disparities is what makes exceptional healthcare professionals. ',
     syllabusUrl:
-      'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA705Syllabus.pdf',
+    '/portfolio/outcomes/#2',
   },
   {
     id: '3',
@@ -24,7 +24,7 @@ export const courses = [
     description:
       'Communication plays a key role in health literacy. This class taught me the importance of communications in healthcare, how we communicate, and the impact it has on the patient based on their culture, social status, etc. ',
     syllabusUrl:
-      'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA710Syllabus.pdf',
+    '/portfolio/outcomes/#3',
   },
   {
     id: '4',
@@ -33,7 +33,7 @@ export const courses = [
     description:
       'Our future is in the hands of technology and being able to learn and advance in this area is critical. This curriculum taught me a lot of useful information, specifically working with Excel. I found this course challenging due to the multiple steps and “shortcuts” if you will, that it takes to learn and memorize to develop graphs and information. These concepts are something I will definitely need further education and training on but I do think that this is something I can become more fluent in with more repetition.',
     syllabusUrl:
-      'https://uwex.wisconsin.edu/healthcare-administration/wp-content/uploads/sites/7/2021/06/HCA715Syllabus.pdf',
+    '/outcomes/#3',
   },
   {
     id: '5',

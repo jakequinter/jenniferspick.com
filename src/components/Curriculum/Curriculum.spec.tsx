@@ -14,6 +14,6 @@ describe('ProfessionalDocuments', () => {
   it('shows 13 cards', () => {
     render(<Curriculum />);
 
-    expect(screen.getAllByRole('heading')).toHaveLength(14);
+    expect(screen.getAllByRole('heading')).toHaveLength(13);
   });
 });

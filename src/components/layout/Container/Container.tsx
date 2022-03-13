@@ -12,7 +12,7 @@ export default function Container({ children }: Props) {
       <nav className="border-neurtal-200 flex items-center justify-between border-b px-8 py-2.5">
         <Link href="/" passHref>
           <a className="montserrat bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400 bg-clip-text pb-1 text-3xl text-transparent">
-            Jennifer
+            Jen
           </a>
         </Link>
         <div>
@@ -72,34 +72,14 @@ function Select() {
               Overview
             </a>
           </Link>
-          <Link href="/portfolio/leadership" passHref>
+          <Link href="/portfolio/outcomes" passHref>
             <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
-              Leadership
+              Outcomes
             </a>
           </Link>
           <Link href="/portfolio/performance" passHref>
             <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
-              Performance
-            </a>
-          </Link>
-          <Link href="/portfolio/recruitment" passHref>
-            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
-              Recruitment
-            </a>
-          </Link>
-          <Link href="/portfolio/effectiveness" passHref>
-            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
-              Effectiveness
-            </a>
-          </Link>
-          <Link href="/portfolio/financial-strategies" passHref>
-            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
-              Financial strategies
-            </a>
-          </Link>
-          <Link href="/portfolio/communication" passHref>
-            <a className="rounded-b-lg p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
-              Communication
+              Capstone
             </a>
           </Link>
         </Popover.Content>
