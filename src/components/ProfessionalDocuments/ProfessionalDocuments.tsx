@@ -1,12 +1,12 @@
 import React from 'react';
-import Link from 'next/link';
-import * as Tooltip from '@radix-ui/react-tooltip';
 import {
   CardStackIcon,
   ClipboardIcon,
   FileTextIcon,
 } from '@radix-ui/react-icons';
 import { motion } from 'framer-motion';
+
+import Tooltip from 'src/components/elements/Tooltip';
 
 const documents = [
   {
@@ -54,41 +54,10 @@ export default function ProfessionalDocuments() {
               hidden: { opacity: 0, scale: 0 },
             }}
           >
-            <RadixTooltip icon={doc.icon} label={doc.label} href={doc.href} />
+            <Tooltip icon={doc.icon} label={doc.label} href={doc.href} />
           </motion.div>
         ))}
       </div>
     </div>
-  );
-}
-
-type RadixToolTipProps = {
-  icon: React.ReactNode;
-  label: string;
-  href: string;
-};
-
-function RadixTooltip({ icon, label, href }: RadixToolTipProps) {
-  return (
-    <Tooltip.Provider delayDuration={100}>
-      <Tooltip.Root>
-        <Link href={href} passHref>
-          <a href={href} download>
-            <Tooltip.Trigger
-              className="mx-1 rounded-lg border-2 border-gray-200 p-4"
-              aria-label={label}
-            >
-              {icon}
-            </Tooltip.Trigger>
-          </a>
-        </Link>
-        <Tooltip.Content
-          data-testid={`tooltip-${label}`}
-          className="mt-2 rounded-full bg-neutral-700 px-2.5 py-0.5 text-white transition delay-300 duration-300 ease-in-out"
-        >
-          {label}
-        </Tooltip.Content>
-      </Tooltip.Root>
-    </Tooltip.Provider>
   );
 }

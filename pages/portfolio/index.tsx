@@ -10,7 +10,7 @@ export default function Portfolio() {
   return (
     <Container>
       <div className="mb-48 text-center">
-        <h1 className="montserrat text-4xl text-neutral-900">
+        <h1 className="montserrat text-5xl text-neutral-900">
           Jennifer Spick, M.S., B.S.
         </h1>
         <h2 className="text-xl">
