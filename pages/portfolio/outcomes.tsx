@@ -184,7 +184,7 @@ export default function Outcomes() {
                           className="fill-blue-500 text-white"
                         />
                       }
-                      label="Non-communicable diseases are a leading cause of death worldwide. My objective with this assignment was addressing what non-communicable diseases are and how we can help prevent them. Improving health status nationally and globally is something that all healthcare officials should aim to achieve. "
+                      label="Non-communicable diseases are a leading cause of death worldwide. My objective with this assignment was addressing what non-communicable diseases are and how we can help prevent them. Improving health status nationally and globally is something that all healthcare officials should aim to achieve."
                     />
                   </span>
                 </li>
