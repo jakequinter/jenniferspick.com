@@ -29,7 +29,7 @@ export const courses = [
     courseNumber: 'HCA 715',
     description:
       'Our future is in the hands of technology and being able to learn and advance in this area is critical. This curriculum taught me a lot of useful information, specifically working with Excel. I found this course challenging due to the multiple steps and “shortcuts” if you will, that it takes to learn and memorize to develop graphs and information. These concepts are something I will definitely need further education and training on but I do think that this is something I can become more fluent in with more repetition.',
-    outcomesUrl: '/outcomes/#4',
+    outcomesUrl: '/portfolio/outcomes/#4',
   },
   {
     id: '5',

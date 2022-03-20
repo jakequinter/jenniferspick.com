@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import * as RadixTooltip from '@radix-ui/react-tooltip';
-import { FiInfo } from 'react-icons/fi';
+import { FiArrowUp, FiInfo } from 'react-icons/fi';
 
 type Outcome = {
   id: number;
@@ -19,10 +19,13 @@ type Document = {
 type Image = {
   src: string;
   alt: string;
+  height?: number;
+  width?: number;
 };
 
 type Props = {
   align?: string;
+  backToTop?: boolean;
   courseName: string;
   courseNumber: string;
   image: Image;
@@ -33,6 +36,7 @@ type Props = {
 
 export default function OutcomeSection({
   align = 'left',
+  backToTop = true,
   courseName,
   courseNumber,
   image,
@@ -51,9 +55,19 @@ export default function OutcomeSection({
             <h2 className="text-5xl font-semibold text-neutral-900">
               {courseName}
             </h2>
-            <span className="inline-flex items-center rounded-full bg-gradient-to-r from-pink-200 via-fuchsia-300 to-pink-200 px-3 py-0.5 text-sm font-medium text-neutral-900">
-              {courseNumber}
-            </span>
+            <div className="flex items-center">
+              <span className="inline-flex items-center rounded-full bg-gradient-to-r from-pink-200 via-fuchsia-300 to-pink-200 px-3 py-0.5 text-sm font-medium text-neutral-900">
+                {courseNumber}
+              </span>
+              {backToTop ? (
+                <button
+                  onClick={() => window.scrollTo(0, 0)}
+                  className="ml-4 inline-flex items-center text-sm text-blue-500 hover:underline"
+                >
+                  <FiArrowUp size="14" className="mr-2" /> Back to top
+                </button>
+              ) : null}
+            </div>
           </div>
           <h3 className="mb-2 mt-4 text-xl font-medium">Outcomes</h3>
           <ul className="ml-8 list-disc space-y-2">
@@ -62,30 +76,36 @@ export default function OutcomeSection({
             ))}
           </ul>
 
-          <div className="mt-4">
-            <h3 className="mb-2 mt-4 text-xl font-medium">Documents</h3>
-            <ul className="ml-8 list-disc space-y-2">
-              {documents?.map(document => (
-                <li key={document.id}>
-                  <span className="flex items-center">
-                    <Link href={document.href} passHref>
-                      <a className="mr-2 text-blue-500 hover:underline">
-                        {document.text}
-                      </a>
-                    </Link>
-                    <Tooltip label={document.tooltipText} />
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {documents ? (
+            <div className="mt-4">
+              <h3 className="mb-2 mt-4 text-xl font-medium">Documents</h3>
+              <ul className="ml-8 list-disc space-y-2">
+                {documents?.map(document => (
+                  <li key={document.id}>
+                    <span className="flex items-center">
+                      <Link href={document.href} passHref>
+                        <a
+                          className="mr-2 text-blue-500 hover:underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {document.text}
+                        </a>
+                      </Link>
+                      <Tooltip label={document.tooltipText} />
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
         </div>
         <div className={`${align === 'left' ? 'ml-auto' : 'order-first'}`}>
           <Image
             className="rounded-xl"
             src={image.src}
-            height="325"
-            width="388"
+            height={image.height || 300}
+            width={image.width || 450}
             alt={image.alt}
           />
         </div>
