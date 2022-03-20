@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import * as Popover from '@radix-ui/react-popover';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
+import { FiBriefcase, FiBookmark, FiHome, FiStar } from 'react-icons/fi';
 
 type Props = {
   children?: React.ReactNode;
@@ -57,9 +58,9 @@ export default function Container({ children }: Props) {
 
 function Select() {
   return (
-    <div className="mr-2 inline-flex items-center rounded-md px-3 py-2.5 hover:bg-neutral-100 hover:text-neutral-900 focus:outline-none focus:ring-0 focus:ring-neutral-300 ">
+    <div className="mr-2 inline-flex items-center focus:outline-none focus:ring-0 focus:ring-neutral-300 ">
       <Popover.Root>
-        <Popover.Trigger className="flex items-center">
+        <Popover.Trigger className="flex items-center rounded-md px-3 py-2.5 hover:bg-neutral-100 hover:text-neutral-900">
           <span className="mr-2">Portfolio</span> <ChevronDownIcon />
         </Popover.Trigger>
         <Popover.Anchor />
@@ -68,18 +69,35 @@ function Select() {
           align="end"
         >
           <Link href="/portfolio" passHref>
-            <a className="rounded-t-lg p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
-              Overview
+            <a className="inline-flex items-center p-2 hover:text-pink-400">
+              <FiHome className="mr-4" />
+              <span className="hover:bg-clip hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text hover:text-transparent">
+                Overview
+              </span>
             </a>
           </Link>
           <Link href="/portfolio/outcomes" passHref>
-            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
-              Outcomes
+            <a className="inline-flex items-center p-2 hover:text-pink-400">
+              <FiBookmark className="mr-4" />
+              <span className="hover:bg-clip hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text hover:text-transparent">
+                Outcomes
+              </span>
             </a>
           </Link>
-          <Link href="/portfolio/performance" passHref>
-            <a className="p-2 hover:bg-gray-50 hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text  hover:text-neutral-900 hover:text-transparent">
-              Capstone
+          <Link href="/portfolio/capstone" passHref>
+            <a className="inline-flex items-center p-2 hover:text-pink-400">
+              <FiStar className="mr-4" />
+              <span className="hover:bg-clip hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text hover:text-transparent">
+                Capstone
+              </span>
+            </a>
+          </Link>
+          <Link href="/portfolio/career" passHref>
+            <a className="inline-flex items-center p-2 hover:text-pink-400">
+              <FiBriefcase className="mr-4" />
+              <span className="hover:bg-clip hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text hover:text-transparent">
+                Career Plans
+              </span>
             </a>
           </Link>
         </Popover.Content>

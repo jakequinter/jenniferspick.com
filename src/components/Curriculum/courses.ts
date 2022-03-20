@@ -92,7 +92,8 @@ export const courses = [
     name: 'Capstone',
     courseNumber: 'HCA 790',
     description:
-      'As a student in the healthcare administration program you will be required to complete Institutional Review Board (IRB) training and follow the IRB process for research projects involving human subjects. The Institutional Review Board (IRB) is a federally-mandated review board which exists to protect the rights and welfare of human research subjects.',
+      'The Capstone project is a cumulative project with a well-rounded understanding of learning outcomes over the duration of the MHA program. My project focused on the realm of sterile processing supplies and inventory and using data analyzation to forecast for future ASC opportunities.',
+      outcomesUrl: '/portfolio/capstone',
   },
 ];
 
