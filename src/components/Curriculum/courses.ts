@@ -4,7 +4,7 @@ export const courses = [
     name: 'U.S. Healthcare Systems',
     courseNumber: 'HCA 700',
     description:
-      'This course helped me brush up on my knowledge of the U.S. Health System and how it works, including specialty areas of healthcare, payment structures and spending, Medicaid/Medicare and insurances, ACA, and the importance of leveraging value-based care.',
+      'This course helped advance my knowledge of the many elements of the U.S. Health System, including history, social and cultural components, payment structures and insurance such as Medicaid, Medicare, and private insurance, and the importance of leveraging value-based care and how delivery of care affects different populations.',
     outcomesUrl: '/portfolio/outcomes/#1',
   },
   {

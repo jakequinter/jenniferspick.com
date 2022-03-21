@@ -9,7 +9,7 @@ import Container from 'src/components/layout/Container/Container';
 const Home: NextPage = () => {
   return (
     <Container>
-      <div className="grid grid-cols-2 items-center gap-4">
+      <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-2">
         <div>
           <p className="mb-4">
             Hi, I’m{' '}
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
               Jennifer
             </span>
             ! I’m an operating room coordinator at Massachusettes General
-            Hospital in Boston, MA. I am also a master’s student at the{' '}
+            Hospital in Boston, MA. I am also a graduate student at the{' '}
             <Link href="https://www.uwlax.edu/grad/health-care-administration/">
               <a className="text-blue-500">University of Wisconsin La Crosse</a>
             </Link>{' '}
@@ -25,8 +25,8 @@ const Home: NextPage = () => {
             administration program.{' '}
           </p>
           <p className="mb-8">
-            Aside from my professional and educational career, I enjoy nature,
-            exercise, friends and family, and exploring my new home.
+            Aside from my professional and educational career, I enjoy the
+            outdoors, exercise, friends and family, and exploring my new home.
           </p>
           <Link href="/portfolio" passHref>
             <a className="inline-flex items-center rounded-lg border border-neutral-200 px-4 py-3 hover:ring-2 hover:ring-neutral-200">
@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           </Link>
         </div>
 
-        <div className="ml-auto">
+        <div className="order-first mx-auto mb-24 md:order-last md:mx-0 md:ml-auto md:mb-0">
           <Image
             className="rounded-lg"
             src="/images/jenHomepage.jpg"

@@ -9,7 +9,7 @@ import Curriculum from 'src/components/Curriculum/Curriculum';
 export default function Portfolio() {
   return (
     <Container>
-      <div className="mb-48 text-center">
+      <div className="mb-24 text-center md:mb-48">
         <h1 className="montserrat text-5xl text-neutral-900">
           Jennifer Spick, M.S., B.S.
         </h1>
@@ -18,15 +18,15 @@ export default function Portfolio() {
         </h2>
       </div>
 
-      <div className="mb-48 grid grid-cols-1 items-center gap-4 md:grid-cols-2">
+      <div className="mb-24 grid grid-cols-1 items-center gap-4 md:mb-48 md:grid-cols-2">
         <div>
           <p className="mb-4">
             I’m Jennifer, a final semester graduate student in the Master of
             Science - Healthcare Administration Program through the University
-            of Wisconsin Madison, in partnership with the University of
-            Wisconsin La Crosse. I’m focused on surgery and perioperative
-            services, leadership and management, public health and healthcare
-            policy and safety.
+            of Wisconsin, in partnership with the University of Wisconsin La
+            Crosse. I’m focused on surgery and perioperative services,
+            leadership and management, public health and healthcare policy and
+            safety.
           </p>
           <p className="mb-8">
             Welcome to my slice of the internet! As you navigate through my

@@ -10,7 +10,7 @@ type Props = {
 export default function Container({ children }: Props) {
   return (
     <div>
-      <nav className="border-neurtal-200 flex items-center justify-between border-b px-8 py-2.5">
+      <nav className="border-neurtal-200 flex items-center justify-between border-b px-4 py-2.5 md:px-8">
         <Link href="/" passHref>
           <a className="montserrat bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400 bg-clip-text pb-1 text-3xl text-transparent">
             Jen

@@ -31,7 +31,7 @@ const documents = [
 
 export default function ProfessionalDocuments() {
   return (
-    <div className="mx-auto mb-48 max-w-md">
+    <div className="mx-auto mb-24 max-w-md md:mb-48">
       <div className="text-center">
         <h2 className="text-5xl font-bold text-neutral-900">
           Professional Documents for your leisure

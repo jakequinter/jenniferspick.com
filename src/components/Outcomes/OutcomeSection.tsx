@@ -45,12 +45,16 @@ export default function OutcomeSection({
   documents,
 }: Props) {
   return (
-    <section className="mb-48">
+    <section className="mb-24 md:mb-48">
       <div
         id={sectionId}
         className="grid grid-cols-1 items-center gap-4 md:grid-cols-2"
       >
-        <div className={`${align === 'left' ? '' : 'order-last ml-auto'}`}>
+        <div
+          className={`${
+            align === 'left' ? '' : 'order-first ml-auto md:order-last'
+          }`}
+        >
           <div className="mb-4">
             <h2 className="text-5xl font-semibold text-neutral-900">
               {courseName}
@@ -100,7 +104,11 @@ export default function OutcomeSection({
             </div>
           ) : null}
         </div>
-        <div className={`${align === 'left' ? 'ml-auto' : 'order-first'}`}>
+        <div
+          className={`${
+            align === 'left' ? 'md:ml-auto' : 'order-last md:order-first'
+          } mx-auto mt-4 md:mx-0 md:mt-0`}
+        >
           <Image
             className="rounded-xl"
             src={image.src}

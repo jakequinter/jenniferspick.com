@@ -9,7 +9,7 @@ import { outcomes, documents, images } from 'src/components/Outcomes/data';
 export default function Outcomes() {
   return (
     <Container>
-      <div className="mx-auto mb-48 max-w-md text-center">
+      <div className="mx-auto mb-24 max-w-md text-center md:mb-48">
         <h1 className="montserrat text-5xl text-neutral-900">
           Course Outcomes and Relevant Coursework
         </h1>

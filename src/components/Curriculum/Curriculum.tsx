@@ -9,7 +9,7 @@ export default function Curriculum() {
       <h2 className="mb-8 text-center text-4xl font-semibold text-neutral-900">
         Check out the curriculum 👇
       </h2>
-      <div className="mb-48 flex space-x-8 overflow-x-auto pb-4">
+      <div className="mb-24 flex space-x-8 overflow-x-auto pb-4 md:mb-48">
         {courses.map(course => (
           <div
             key={course.id}
