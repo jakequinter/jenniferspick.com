@@ -5,9 +5,10 @@ import { FiBriefcase, FiBookmark, FiHome, FiStar } from 'react-icons/fi';
 
 type Props = {
   children?: React.ReactNode;
+  showFooter?: boolean;
 };
 
-export default function Container({ children }: Props) {
+export default function Container({ children, showFooter = true }: Props) {
   return (
     <div>
       <nav className="border-neurtal-200 flex items-center justify-between border-b px-4 py-2.5 md:px-8">
@@ -35,23 +36,30 @@ export default function Container({ children }: Props) {
       </nav>
       <main
         className="mx-auto mt-24 max-w-screen-lg px-4 xl:px-0"
-        style={{ minHeight: 'calc(100vh - 218px)' }}
+        style={{ minHeight: 'calc(100vh - 315px)' }}
       >
         {children}
       </main>
-      <footer className="border-neurtal-200 mt-24 flex items-center justify-between border-t px-8 py-2.5">
-        <p className="montserrat bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400 bg-clip-text pb-1 text-3xl text-transparent">
-          Jennifer
-        </p>
-        <div>
-          <Link href="/contact" passHref>
-            <a className="mr-2 inline-flex items-center px-3 py-2.5 text-sm text-neutral-500 hover:text-neutral-400">
-              Contact
-            </a>
-          </Link>
-          <span className="text-xl">👩‍⚕️</span>
-        </div>
-      </footer>
+      {showFooter ? (
+        <footer className="border-neurtal-200 mt-24 flex items-center justify-between border-t px-8 py-2.5">
+          <p className="montserrat bg-gradient-to-r from-pink-400 via-fuchsia-400 to-pink-400 bg-clip-text pb-1 text-3xl text-transparent">
+            Jennifer
+          </p>
+          <div>
+            <Link href="/portfolio" passHref>
+              <a className="mr-2 inline-flex items-center px-3 py-2.5 text-sm text-neutral-500 hover:text-neutral-400">
+                Portfolio
+              </a>
+            </Link>
+            <Link href="/contact" passHref>
+              <a className="mr-2 inline-flex items-center px-3 py-2.5 text-sm text-neutral-500 hover:text-neutral-400">
+                Contact
+              </a>
+            </Link>
+            <span className="text-xl">👩‍⚕️</span>
+          </div>
+        </footer>
+      ) : null}
     </div>
   );
 }
@@ -89,14 +97,6 @@ function Select() {
               <FiStar className="mr-4" />
               <span className="hover:bg-clip hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text hover:text-transparent">
                 Capstone
-              </span>
-            </a>
-          </Link>
-          <Link href="/portfolio/career" passHref>
-            <a className="inline-flex items-center p-2 hover:text-pink-400">
-              <FiBriefcase className="mr-4" />
-              <span className="hover:bg-clip hover:bg-gradient-to-r hover:from-pink-400 hover:via-fuchsia-400 hover:to-pink-400 hover:bg-clip-text hover:text-transparent">
-                Career Plans
               </span>
             </a>
           </Link>

@@ -55,6 +55,33 @@ export default function Portfolio() {
       <Curriculum />
       <ProfessionalDocuments />
       <ProgramOutcomesCards />
+
+      <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-2">
+        <div>
+          <h2 className="text-5xl font-bold text-neutral-900 lg:text-left">
+            Future Career Plans
+          </h2>
+          <p className="mb-8 ml-0 lg:mt-0 lg:mr-20">
+            The future of my career is still unknown. I am optimistic that my
+            education and experience will lead me to a management position where
+            I will be able to showcase my motivation, determination, skillset
+            and work ethic. I am passionate about continuing to evolve as a
+            healthcare leader much like how healthcare continues to evolve
+            today. As I enter into the professional world, I plan to use what
+            I’ve learned while also continuing to advance and grow. This program
+            has granted me the ability to apply all the beneficial knowledge
+            I’ve learned while also continuing to improve wherever my path
+            leads.
+          </p>
+        </div>
+        <Image
+          className="rounded-lg"
+          height="400"
+          width="300"
+          src="/images/career.jpg"
+          alt="Desk with Mac computer that says 'Do More.'"
+        />
+      </div>
     </Container>
   );
 }

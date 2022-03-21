@@ -8,7 +8,7 @@ import Container from 'src/components/layout/Container/Container';
 
 const Home: NextPage = () => {
   return (
-    <Container>
+    <Container showFooter={false}>
       <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-2">
         <div>
           <p className="mb-4">

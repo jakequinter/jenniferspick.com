@@ -19,7 +19,7 @@ const documents = [
     id: 2,
     icon: <CardStackIcon />,
     label: 'Transcripts',
-    href: '/assets/resume.pdf',
+    href: '/assets/transcript.pdf',
   },
   {
     id: 3,

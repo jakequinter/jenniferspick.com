@@ -8,38 +8,26 @@ export default function ProgramOutcomesCards() {
     {
       id: '1',
       title: 'Leadership',
-      description:
-        'Address political, legal, regulatory, governmental, and ethical issues associated with diverse healthcare settings.',
     },
     {
       id: '2',
       title: 'Performance',
-      description:
-        'Performance, yadayadaydads, regulatory, governmental, and ethical issues',
     },
     {
       id: '3',
       title: 'Recruitment',
-      description:
-        'Performance, yadayadaydads, regulatory, governmental, and ethical issues',
     },
     {
       id: '4',
       title: 'Effectiveness',
-      description:
-        'Performance, yadayadaydads, regulatory, governmental, and ethical issues',
     },
     {
       id: '5',
       title: 'Financial strategies',
-      description:
-        'Performance, yadayadaydads, regulatory, governmental, and ethical issues',
     },
     {
       id: '6',
       title: 'Communication',
-      description:
-        'Performance, yadayadaydads, regulatory, governmental, and ethical issues',
     },
   ];
 
@@ -52,7 +40,7 @@ export default function ProgramOutcomesCards() {
   };
 
   return (
-    <div className="grid grid-cols-1 items-center gap-4 lg:grid-cols-2">
+    <div className="mb-24 grid grid-cols-1 items-center gap-4 md:mb-48 lg:grid-cols-2">
       <div className="order-last grid grid-cols-1 gap-4 sm:grid-cols-2 lg:order-first">
         {items.map((item, idx) => (
           <motion.div
@@ -68,20 +56,16 @@ export default function ProgramOutcomesCards() {
           >
             <motion.div
               layout
-              className={`${
-                isOpen === item.id
-                  ? 'ring-2 ring-neutral-200'
-                  : 'flex h-20 items-center justify-center'
-              } cursor-pointer rounded-xl border-2 border-neutral-200 hover:ring-2 hover:ring-neutral-200`}
-              onClick={() => handleCardClick(item.id)}
+              className="flex h-20 items-center justify-center rounded-xl bg-neutral-200 p-1 hover:border-0 hover:bg-gradient-to-r hover:from-pink-200 hover:via-fuchsia-300 hover:to-pink-200"
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.5 },
+              }}
             >
-              <div className="order-first p-4 lg:order-last">
-                <h2 className="text-center text-lg font-medium text-neutral-900">
+              <div className="order-first flex h-full w-full flex-shrink-0 items-center justify-center rounded-lg bg-white lg:order-last">
+                <h2 className="text-lg font-medium text-neutral-900">
                   {item.title}
                 </h2>
-                {isOpen === item.id && (
-                  <p className="mt-2">{item.description}</p>
-                )}
               </div>
             </motion.div>
           </motion.div>
@@ -92,7 +76,7 @@ export default function ProgramOutcomesCards() {
           Progam Outcomes
         </h2>
         <p className="mt-2">
-          Both the University of Wisconsin Madison and the University of
+          Both the University of Wisconsin Extended Campus and the University of
           Wisconsin La Crosse have fine-tuned their healthcare administration
           programs to be some of the best educational programs in the world.
           Through their continuous refinement, both the University of Wisconsin
