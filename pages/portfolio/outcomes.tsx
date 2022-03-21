@@ -109,7 +109,7 @@ export default function Outcomes() {
         courseName="Current and Emerging Topics in Healthcare"
         courseNumber="HCA 780"
         outcomes={outcomes.hca780}
-        documents={documents.hca740}
+        documents={documents.hca780}
         image={images.hca780}
       />
     </Container>
