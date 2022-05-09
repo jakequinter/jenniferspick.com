@@ -41,8 +41,8 @@ export default function Portfolio() {
           <p className="mb-4">
             I&apos;m Jennifer, a graduate of the Master of Science - Healthcare
             Administration Program through the University of Wisconsin, in
-            partnership with the University of Wisconsin La Crosse. I&apos;m
-            focused on surgery and perioperative services, leadership and
+            partnership with the University of Wisconsin La Crosse. My focuses
+            include surgical and perioperative services, leadership and
             management, public health and healthcare quality and safety.
           </p>
           <p className="mb-8">
