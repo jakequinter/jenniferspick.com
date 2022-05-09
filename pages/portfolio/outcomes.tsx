@@ -1,6 +1,4 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import Head from 'next/head';
 
 import Container from 'src/components/layout/Container/Container';
 import OutcomeSection from 'src/components/Outcomes/OutcomeSection';
@@ -9,6 +7,22 @@ import { outcomes, documents, images } from 'src/components/Outcomes/data';
 export default function Outcomes() {
   return (
     <Container>
+      <Head>
+        <title>Outcomes | Jennifer Spick</title>
+        <meta
+          content="Jennifer Spick is a healthcare administrative professional who focuses on simultaneously evolving with healthcare advancements"
+          name="description"
+        />
+        <meta property="og:url" content="https://jenniferspick.com/outcomes" />
+        <link rel="canonical" href="https://jenniferspick.com/outcomes" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Jennifer Spick" />
+        <meta
+          property="og:description"
+          content="Jennifer Spick is a healthcare administrative professional who focuses on simultaneously evolving with healthcare advancements"
+        />
+        <meta property="og:title" content="Outcomes | Jennifer Spick" />
+      </Head>
       <div className="mx-auto mb-24 max-w-md text-center md:mb-48">
         <h1 className="montserrat text-5xl text-neutral-900">
           Course Outcomes and Relevant Coursework

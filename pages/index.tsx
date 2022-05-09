@@ -9,14 +9,30 @@ import Container from 'src/components/layout/Container/Container';
 const Home: NextPage = () => {
   return (
     <Container showFooter={false}>
-      <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-2">
+      <Head>
+        <title>Jennifer Spick</title>
+        <meta
+          content="Jennifer Spick is a healthcare administrative professional who focuses on simultaneously evolving with healthcare advancements"
+          name="description"
+        />
+        <meta property="og:url" content="https://jenniferspick.com" />
+        <link rel="canonical" href="https://jenniferspick.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Jennifer Spick" />
+        <meta
+          property="og:description"
+          content="Jennifer Spick is a healthcare administrative professional who focuses on simultaneously evolving with healthcare advancements"
+        />
+        <meta property="og:title" content="Jennifer Spick" />
+      </Head>
+      <div className="grid grid-cols-1 items-center gap-4 pb-24 md:grid-cols-2">
         <div>
           <p className="mb-4">
-            Hi, I’m{' '}
+            Hi, I&apos;m{' '}
             <span className="montserrat text-3xl text-neutral-900">
               Jennifer
             </span>
-            ! I’m an operating room coordinator at Massachusettes General
+            ! I&apos;m an operating room coordinator at Massachusettes General
             Hospital in Boston, MA. I am also a graduate student at the{' '}
             <Link href="https://www.uwlax.edu/grad/health-care-administration/">
               <a className="text-blue-500">University of Wisconsin La Crosse</a>

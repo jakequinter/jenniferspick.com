@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -9,6 +10,23 @@ import Curriculum from 'src/components/Curriculum/Curriculum';
 export default function Portfolio() {
   return (
     <Container>
+      <Head>
+        <title>Potfolio | Jennifer Spick</title>
+        <meta
+          content="Jennifer Spick is a healthcare administrative professional who focuses on simultaneously evolving with healthcare advancements"
+          name="description"
+        />
+        <meta property="og:url" content="https://jenniferspick.com/portfolio" />
+        <link rel="canonical" href="https://jenniferspick.com/portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Jennifer Spick" />
+        <meta
+          property="og:description"
+          content="Jennifer Spick is a healthcare administrative professional who focuses on simultaneously evolving with healthcare advancements"
+        />
+        <meta property="og:title" content="Portfolio | Jennifer Spick" />
+      </Head>
+
       <div className="mb-24 text-center md:mb-48">
         <h1 className="montserrat text-5xl text-neutral-900">
           Jennifer Spick, M.S., B.S.
@@ -21,19 +39,19 @@ export default function Portfolio() {
       <div className="mb-24 grid grid-cols-1 items-center gap-4 md:mb-48 md:grid-cols-2">
         <div>
           <p className="mb-4">
-            I’m Jennifer, a final semester graduate student in the Master of
-            Science - Healthcare Administration Program through the University
-            of Wisconsin, in partnership with the University of Wisconsin La
-            Crosse. I’m focused on surgery and perioperative services,
-            leadership and management, public health and healthcare policy and
-            safety.
+            I&apos;m Jennifer, a final semester graduate student in the Master
+            of Science - Healthcare Administration Program through the
+            University of Wisconsin, in partnership with the University of
+            Wisconsin La Crosse. I&apos;m focused on surgery and perioperative
+            services, leadership and management, public health and healthcare
+            quality and safety.
           </p>
           <p className="mb-8">
             Welcome to my slice of the internet! As you navigate through my
             website, you will find out more about me and my accomplishments
             throughout my career and my MS HCA program. My education, work, and
-            experience has molded me into a strong, qualified leader and I’m
-            excited to leave a positive impact on healthcare.
+            experience has molded me into a strong, qualified leader and
+            I&apos;m excited to leave a positive impact on healthcare.
           </p>
         </div>
         <motion.div
@@ -68,10 +86,10 @@ export default function Portfolio() {
             and work ethic. I am passionate about continuing to evolve as a
             healthcare leader much like how healthcare continues to evolve
             today. As I enter into the professional world, I plan to use what
-            I’ve learned while also continuing to advance and grow. This program
-            has granted me the ability to apply all the beneficial knowledge
-            I’ve learned while also continuing to improve wherever my path
-            leads.
+            I&apos;ve learned while also continuing to advance and grow. This
+            program has granted me the ability to apply all the beneficial
+            knowledge I&apos;ve learned while also continuing to improve
+            wherever my path leads.
           </p>
         </div>
         <Image
