@@ -32,13 +32,13 @@ const Home: NextPage = () => {
             <span className="montserrat text-3xl text-neutral-900">
               Jennifer
             </span>
-            ! I&apos;m an operating room coordinator at Massachusettes General
-            Hospital in Boston, MA. I am also a graduate student at the{' '}
+            ! I&apos;m an operating room coordinator at Massachusetts General
+            Hospital in Boston, MA. I also recently received my Master&apos;s
+            degree in healthcare administration from the{' '}
             <Link href="https://www.uwlax.edu/grad/health-care-administration/">
               <a className="text-blue-500">University of Wisconsin La Crosse</a>
-            </Link>{' '}
-            where I am finishing my final semester in the healthcare
-            administration program.{' '}
+            </Link>
+            .
           </p>
           <p className="mb-8">
             Aside from my professional and educational career, I enjoy the

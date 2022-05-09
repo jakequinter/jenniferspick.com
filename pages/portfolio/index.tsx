@@ -39,19 +39,18 @@ export default function Portfolio() {
       <div className="mb-24 grid grid-cols-1 items-center gap-4 md:mb-48 md:grid-cols-2">
         <div>
           <p className="mb-4">
-            I&apos;m Jennifer, a final semester graduate student in the Master
-            of Science - Healthcare Administration Program through the
-            University of Wisconsin, in partnership with the University of
-            Wisconsin La Crosse. I&apos;m focused on surgery and perioperative
-            services, leadership and management, public health and healthcare
-            quality and safety.
+            I&apos;m Jennifer, a graduate of the Master of Science - Healthcare
+            Administration Program through the University of Wisconsin, in
+            partnership with the University of Wisconsin La Crosse. I&apos;m
+            focused on surgery and perioperative services, leadership and
+            management, public health and healthcare quality and safety.
           </p>
           <p className="mb-8">
             Welcome to my slice of the internet! As you navigate through my
             website, you will find out more about me and my accomplishments
             throughout my career and my MS HCA program. My education, work, and
             experience has molded me into a strong, qualified leader and
-            I&apos;m excited to leave a positive impact on healthcare.
+            I&apos;m excited to leave a positive impact in healthcare.
           </p>
         </div>
         <motion.div
